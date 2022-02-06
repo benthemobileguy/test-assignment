@@ -1,0 +1,60 @@
+name: android_test_task
+description: A Test Project
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.2"
+
+dependencies:
+  flutter_launcher_icons: ^0.9.0
+
+  flutter:
+    sdk: flutter
+  #Flutter Dependencies here
+
+  hexcolor: ^2.0.4
+  multi_select_flutter: ^4.0.0
+  custom_timer: ^0.0.6
+  numeric_keyboard: ^1.1.0
+  http: ^0.13.4
+  fluttertoast: ^8.0.8
+  provider: ^6.0.2
+  percent_indicator: ^4.0.0
+  flutter_svg: ^0.22.0
+  pin_code_fields: ^7.3.0
+  md2_tab_indicator: ^1.0.2
+
+analyzer:
+  strong-mode: true
+  language:
+    enableSuperMixins: true
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+  #assets here
+  assets:
+    - assets/fonts/
+    - assets/images/
+
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSans-Light.ttf
+          weight: 300
